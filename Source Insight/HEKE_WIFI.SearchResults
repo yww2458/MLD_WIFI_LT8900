@@ -1,0 +1,7 @@
+---- sec Matches (6 in 4 files) ----
+Commu.c (d:\yuwenwen\项目\万瑞震动床(wifi版本)\src\hekrprotocol\project):			else if (mTIME.sec == 0)
+Stm8_uart.c (d:\yuwenwen\项目\万瑞震动床(wifi版本)\src\hekrprotocol\chip\src):	if(mTIME.sec == 0) // 每s检测一次wifi 状态
+Sys.c (d:\yuwenwen\项目\万瑞震动床(wifi版本)\src\hekrprotocol\system\sys):	if(mTIME.sec>=TIME_BASE_SEC)			//one second base timer //
+Sys.c (d:\yuwenwen\项目\万瑞震动床(wifi版本)\src\hekrprotocol\system\sys):		mTIME.sec=0;
+Sys.c (d:\yuwenwen\项目\万瑞震动床(wifi版本)\src\hekrprotocol\system\sys):		mTIME.sec++; 
+Sys.h (d:\yuwenwen\项目\万瑞震动床(wifi版本)\src\hekrprotocol\system\sys):	uchar sec;

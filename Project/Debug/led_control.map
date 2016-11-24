@@ -1,0 +1,771 @@
+
+Map of Debug\led_control.sm8 from link file Debug\led_control.lkf - Thu Nov 24 14:41:47 2016
+
+
+                               --------
+                               Segments
+                               --------
+
+start 00008080 end 00008090 length    16 segment .const
+start 000080a1 end 000094ff length  5214 segment .text
+start 00004000 end 00004000 length     0 segment .eeprom
+start 00000000 end 00000003 length     3 segment .bsct, initialized
+start 0000809d end 000080a0 length     3 segment .bsct, from
+start 00000003 end 00000056 length    83 segment .ubsct
+start 00000056 end 00000056 length     0 segment .bit
+start 00000056 end 00000056 length     0 segment .share
+start 00000100 end 00000101 length     1 segment .data, initialized
+start 000080a0 end 000080a1 length     1 segment .data, from
+start 00000101 end 000001d6 length   213 segment .bss
+start 00000000 end 00013d87 length 81287 segment .debug
+start 00008000 end 00008080 length   128 segment .const
+start 00008090 end 0000809d length    13 segment .init
+
+
+                               -------
+                               Modules
+                               -------
+
+C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8:
+start 000080a1 end 000080ec length    75 section .text
+start 00000101 end 00000101 length     0 section .bss
+start 00000003 end 00000003 length     0 section .ubsct
+
+Debug\hekr_protocol.o:
+start 00000000 end 00001e8d length  7821 section .debug
+
+Debug\stm8_uart.o:
+start 000080ec end 000085fc length  1296 section .text
+start 00000101 end 0000014f length    78 section .bss
+start 00001e8d end 0000468c length 10239 section .debug
+start 00008080 end 00008090 length    16 section .const
+
+Debug\main.o:
+start 000085fc end 00008615 length    25 section .text
+start 0000468c end 00006583 length  7927 section .debug
+
+Debug\delay.o:
+start 00008615 end 0000867e length   105 section .text
+start 00000000 end 00000001 length     1 section .bsct
+start 00006583 end 0000673a length   439 section .debug
+
+Debug\sys.o:
+start 0000867e end 00008735 length   183 section .text
+start 0000014f end 0000016e length    31 section .bss
+start 00000003 end 0000000c length     9 section .ubsct
+start 0000673a end 00008cd2 length  9624 section .debug
+
+Debug\beep.o:
+start 00008735 end 0000881c length   231 section .text
+start 00000100 end 00000101 length     1 section .data
+start 0000016e end 00000179 length    11 section .bss
+start 00000001 end 00000002 length     1 section .bsct
+start 00008cd2 end 0000ae81 length  8623 section .debug
+
+Debug\commu.o:
+start 0000881c end 00008cde length  1218 section .text
+start 00000179 end 000001cd length    84 section .bss
+start 0000ae81 end 0000d1a6 length  8997 section .debug
+
+Debug\eeprom.o:
+start 00008cde end 00008d6f length   145 section .text
+start 000001cd end 000001d6 length     9 section .bss
+start 0000d1a6 end 0000f2f2 length  8524 section .debug
+
+Debug\lt8900.o:
+start 00008d6f end 000094a0 length  1841 section .text
+start 00000002 end 00000003 length     1 section .bsct
+start 0000000c end 0000004c length    64 section .ubsct
+start 0000f2f2 end 00011d8f length 10909 section .debug
+
+Debug\user.o:
+start 00011d8f end 00013c1c length  7821 section .debug
+
+(C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)imul.o:
+start 000094a0 end 000094c1 length    33 section .text
+
+(C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)ltor.o:
+start 000094c1 end 000094d3 length    18 section .text
+
+(C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)lreg.o:
+start 0000004c end 00000050 length     4 section .ubsct
+
+(C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)sdivx.o:
+start 000094d3 end 000094fe length    43 section .text
+
+(C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)xreg.o:
+start 00000050 end 00000053 length     3 section .ubsct
+
+(C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)yreg.o:
+start 00000053 end 00000056 length     3 section .ubsct
+
+Debug\stm8_interrupt_vector.o:
+start 000094fe end 000094ff length     1 section .text
+start 00013c1c end 00013d87 length   363 section .debug
+start 00008000 end 00008080 length   128 section .const
+
+
+                             -----------
+                             Stack usage
+                             -----------
+
+Debug\beep.o:
+_Beep                          2   (2)
+_Beep2KOff                     2   (2)
+_Beep2KOn                      2   (2)
+_BeepInISR                     2   (2)
+_InitBeep                      2   (2)
+_TestBeep                 >    6   (2)
+_buzzcon                       4   (2)
+
+Debug\commu.o:
+_BTSendData                    2   (2)
+_GUART_commu                  10   (8)
+_GUART_init                    2   (2)
+f_EXTI_PORTB_IRQHandler   >    5   (5)
+f_TIM2_isr                >   11   (11)
+
+Debug\delay.o:
+_delay_init                    5   (3)
+_delay_ms                 >    8   (5)
+_delay_us                      2   (2)
+
+Debug\eeprom.o:
+_eeprom_rdchar                 4   (4)
+_eeprom_rdpart            >   10   (6)
+_eeprom_read              >    2   (2)
+_eeprom_wrchar                 5   (5)
+_eeprom_write             >    2   (2)
+
+Debug\lt8900.o:
+_Get_chipId                   15   (15)
+_Init_LT8900                  17   (2)
+_LT8900_DOWN_Deal             22   (3)
+_LT8900_check_data             5   (5)
+_LT8900_match_Deal            19   (2)
+_LT8900_pack_data              4   (4)
+_LT8900_read_data             16   (3)
+_LT8900_send_data             18   (3)
+_LT8900_unpack_data           10   (7)
+_LT_ReadReg                   13   (3)
+_LT_StartRx                   17   (2)
+_LT_TO_IDLE                   17   (2)
+_LT_WriteReg                  15   (5)
+_LT_comm_status_pack      >    2   (2)
+_SPI_ReadByte             >    9   (5)
+_SPI_SendByte                 10   (6)
+_SPI_WriteByte            >    9   (5)
+_delay2_5US_1                  4   (4)
+_mdelay                        8   (8)
+_mdelay_1                 >   10   (2)
+
+Debug\main.o:
+_main                     >   24   (2)
+
+Debug\stm8_interrupt_vector.o:
+f_NonHandledInterrupt     >    5   (5)
+
+Debug\stm8_uart.o:
+L1202_DataBuffCalculate        7   (7)
+L5602_DataBuffCheckIsErr      13   (6)
+_UART2_Init                    2   (2)
+_WIFI_COMMU                   16   (3)
+f_UART2_Recv_IRQHandler   >    6   (6)
+f_UART2_Send_IRQHandler   >    5   (5)
+
+Debug\sys.o:
+_GPIO_INI                      2   (2)
+_SYS_CLK_INI                   2   (2)
+_SYS_INI                      19   (2)
+___TIM4_INI                    2   (2)
+___WAIT_SYSTEM_STABLE          4   (4)
+_timer_proc                    2   (2)
+f_TIM4_isr                >   13   (11)
+
+Stack size: 37
+
+
+                              ---------
+                              Call tree
+                              ---------
+   1 > _LT_comm_status_pack: (2)
+
+   2 > _SPI_ReadByte: (5)
+   3      + _delay2_5US_1: (4)
+       
+   4 > _SPI_WriteByte: (5)
+   5      + _delay2_5US_1 --> 3
+       
+   6 > _TestBeep: (2)
+   7      + _Beep: (2)
+   8      + _buzzcon: (2)
+   9      |    + _Beep2KOff: (2)
+  10      |    + _Beep2KOn: (2)
+          | 
+       
+  11 > __stext: (0)
+
+  12 > _delay_ms: (5)
+  13      + _delay_us: (2)
+       
+  14 > _eeprom_rdpart: (6)
+  15      + _eeprom_rdchar: (4)
+       
+  16 > _eeprom_read: (2)
+
+  17 > _eeprom_write: (2)
+
+  18 > _main: (2)
+  19      + _GUART_commu: (8)
+  20      |    + _BTSendData: (2)
+          | 
+  21      + _LT8900_DOWN_Deal: (3)
+  22      |    + _LT8900_check_data: (5)
+  23      |    + _LT8900_match_Deal: (2)
+  24      |    |    + _Beep --> 7
+  25      |    |    + _LT8900_check_data --> 22
+  26      |    |    + _LT8900_read_data: (3)
+  27      |    |    |    + _LT_ReadReg: (3)
+  28      |    |    |    |    + _SPI_SendByte: (6)
+  29      |    |    |    |    |    + _delay2_5US_1 --> 3
+          |    |    |    |    | 
+  30      |    |    |    |    + _delay2_5US_1 --> 3
+          |    |    |    | 
+          |    |    | 
+  31      |    |    + _LT_StartRx: (2)
+  32      |    |    |    + _LT_WriteReg: (5)
+  33      |    |    |    |    + _SPI_SendByte --> 28
+  34      |    |    |    |    + _delay2_5US_1 --> 3
+          |    |    |    | 
+          |    |    | 
+  35      |    |    + _LT_TO_IDLE: (2)
+  36      |    |    |    + _LT_WriteReg --> 32
+          |    |    | 
+  37      |    |    + _eeprom_wrchar: (5)
+          |    | 
+  38      |    + _LT8900_pack_data: (4)
+  39      |    + _LT8900_read_data --> 26
+  40      |    + _LT8900_send_data: (3)
+  41      |    |    + _LT_WriteReg --> 32
+          |    | 
+  42      |    + _LT8900_unpack_data: (7)
+  43      |    |    + _Beep --> 7
+          |    | 
+  44      |    + _LT_StartRx --> 31
+  45      |    + _LT_TO_IDLE --> 35
+          | 
+  46      + _SYS_INI: (2)
+  47      |    + _GPIO_INI: (2)
+  48      |    + _GUART_init: (2)
+  49      |    + _InitBeep: (2)
+  50      |    + _Init_LT8900: (2)
+  51      |    |    + _Get_chipId: (15)
+  52      |    |    + _LT_WriteReg --> 32
+  53      |    |    + _eeprom_rdchar --> 15
+  54      |    |    + _mdelay: (8)
+          |    | 
+  55      |    + _SYS_CLK_INI: (2)
+  56      |    + _UART2_Init: (2)
+  57      |    + ___TIM4_INI: (2)
+  58      |    + ___WAIT_SYSTEM_STABLE: (4)
+  59      |    + _delay_init: (3)
+          | 
+  60      + _WIFI_COMMU: (3)
+  61      |    + L1202_DataBuffCalculate: (7)
+  62      |    + L5602_DataBuffCheckIsErr: (6)
+  63      |    |    + L1202_DataBuffCalculate --> 61
+          |    | 
+          | 
+  64      + _timer_proc: (2)
+       
+  65 > _mdelay_1: (2)
+  66      + _mdelay --> 54
+       
+  67 > f_EXTI_PORTB_IRQHandler: (5)
+
+  68 > f_NonHandledInterrupt: (5)
+
+  69 > f_TIM2_isr: (11)
+
+  70 > f_TIM4_isr: (11)
+  71      + _BeepInISR: (2)
+       
+  72 > f_UART2_Recv_IRQHandler: (6)
+
+  73 > f_UART2_Send_IRQHandler: (5)
+
+  74   L1202_DataBuffCalculate --> 61
+
+  75   L5602_DataBuffCheckIsErr --> 62
+
+  76   _BTSendData --> 20
+
+  77   _Beep --> 7
+
+  78   _Beep2KOff --> 9
+
+  79   _Beep2KOn --> 10
+
+  80   _BeepInISR --> 71
+
+  81   _GPIO_INI --> 47
+
+  82   _GUART_commu --> 19
+
+  83   _GUART_init --> 48
+
+  84   _Get_chipId --> 51
+
+  85   _InitBeep --> 49
+
+  86   _Init_LT8900 --> 50
+
+  87   _LT8900_DOWN_Deal --> 21
+
+  88   _LT8900_check_data --> 22
+
+  89   _LT8900_match_Deal --> 23
+
+  90   _LT8900_pack_data --> 38
+
+  91   _LT8900_read_data --> 26
+
+  92   _LT8900_send_data --> 40
+
+  93   _LT8900_unpack_data --> 42
+
+  94   _LT_ReadReg --> 27
+
+  95   _LT_StartRx --> 31
+
+  96   _LT_TO_IDLE --> 35
+
+  97   _LT_WriteReg --> 32
+
+  98   _SPI_SendByte --> 28
+
+  99   _SYS_CLK_INI --> 55
+
+ 100   _SYS_INI --> 46
+
+ 101   _UART2_Init --> 56
+
+ 102   _WIFI_COMMU --> 60
+
+ 103   ___TIM4_INI --> 57
+
+ 104   ___WAIT_SYSTEM_STABLE --> 58
+
+ 105   _buzzcon --> 8
+
+ 106   _delay2_5US_1 --> 3
+
+ 107   _delay_init --> 59
+
+ 108   _delay_us --> 13
+
+ 109   _eeprom_rdchar --> 15
+
+ 110   _eeprom_wrchar --> 37
+
+ 111   _mdelay --> 54
+
+ 112   _timer_proc --> 64
+
+
+
+                               -------
+                               Symbols
+                               -------
+
+_ADC_AWCR                 0000540e   defined in Debug\hekr_protocol.o
+_ADC_AWCRH                0000540e   defined in Debug\hekr_protocol.o
+_ADC_AWCRL                0000540f   defined in Debug\hekr_protocol.o
+_ADC_AWSR                 0000540c   defined in Debug\hekr_protocol.o
+_ADC_AWSRH                0000540c   defined in Debug\hekr_protocol.o
+_ADC_AWSRL                0000540d   defined in Debug\hekr_protocol.o
+_ADC_CR1                  00005401   defined in Debug\hekr_protocol.o
+_ADC_CR2                  00005402   defined in Debug\hekr_protocol.o
+_ADC_CR3                  00005403   defined in Debug\hekr_protocol.o
+_ADC_CSR                  00005400   defined in Debug\hekr_protocol.o
+_ADC_DB0R                 000053e0   defined in Debug\hekr_protocol.o
+_ADC_DB0RH                000053e0   defined in Debug\hekr_protocol.o
+_ADC_DB0RL                000053e1   defined in Debug\hekr_protocol.o
+_ADC_DB1R                 000053e2   defined in Debug\hekr_protocol.o
+_ADC_DB1RH                000053e2   defined in Debug\hekr_protocol.o
+_ADC_DB1RL                000053e3   defined in Debug\hekr_protocol.o
+_ADC_DB2R                 000053e4   defined in Debug\hekr_protocol.o
+_ADC_DB2RH                000053e4   defined in Debug\hekr_protocol.o
+_ADC_DB2RL                000053e5   defined in Debug\hekr_protocol.o
+_ADC_DB3R                 000053e6   defined in Debug\hekr_protocol.o
+_ADC_DB3RH                000053e6   defined in Debug\hekr_protocol.o
+_ADC_DB3RL                000053e7   defined in Debug\hekr_protocol.o
+_ADC_DB4R                 000053e8   defined in Debug\hekr_protocol.o
+_ADC_DB4RH                000053e8   defined in Debug\hekr_protocol.o
+_ADC_DB4RL                000053e9   defined in Debug\hekr_protocol.o
+_ADC_DB5R                 000053ea   defined in Debug\hekr_protocol.o
+_ADC_DB5RH                000053ea   defined in Debug\hekr_protocol.o
+_ADC_DB5RL                000053eb   defined in Debug\hekr_protocol.o
+_ADC_DB6R                 000053ec   defined in Debug\hekr_protocol.o
+_ADC_DB6RH                000053ec   defined in Debug\hekr_protocol.o
+_ADC_DB6RL                000053ed   defined in Debug\hekr_protocol.o
+_ADC_DB7R                 000053ee   defined in Debug\hekr_protocol.o
+_ADC_DB7RH                000053ee   defined in Debug\hekr_protocol.o
+_ADC_DB7RL                000053ef   defined in Debug\hekr_protocol.o
+_ADC_DB8R                 000053f0   defined in Debug\hekr_protocol.o
+_ADC_DB8RH                000053f0   defined in Debug\hekr_protocol.o
+_ADC_DB8RL                000053f1   defined in Debug\hekr_protocol.o
+_ADC_DB9R                 000053f2   defined in Debug\hekr_protocol.o
+_ADC_DB9RH                000053f2   defined in Debug\hekr_protocol.o
+_ADC_DB9RL                000053f3   defined in Debug\hekr_protocol.o
+_ADC_DR                   00005404   defined in Debug\hekr_protocol.o
+_ADC_DRH                  00005404   defined in Debug\hekr_protocol.o
+_ADC_DRL                  00005405   defined in Debug\hekr_protocol.o
+_ADC_HTR                  00005408   defined in Debug\hekr_protocol.o
+_ADC_HTRH                 00005408   defined in Debug\hekr_protocol.o
+_ADC_HTRL                 00005409   defined in Debug\hekr_protocol.o
+_ADC_LTR                  0000540a   defined in Debug\hekr_protocol.o
+_ADC_LTRH                 0000540a   defined in Debug\hekr_protocol.o
+_ADC_LTRL                 0000540b   defined in Debug\hekr_protocol.o
+_ADC_TDR                  00005406   defined in Debug\hekr_protocol.o
+_ADC_TDRH                 00005406   defined in Debug\hekr_protocol.o
+_ADC_TDRL                 00005407   defined in Debug\hekr_protocol.o
+_AWU_APR                  000050f1   defined in Debug\hekr_protocol.o
+_AWU_CSR                  000050f0   defined in Debug\hekr_protocol.o
+_AWU_TBR                  000050f2   defined in Debug\hekr_protocol.o
+_BEEP_CSR                 000050f3   defined in Debug\hekr_protocol.o
+_BTSendData               00008893   defined in Debug\commu.o section .text
+_Beep                     0000876b   defined in Debug\beep.o section .text
+                                     used in Debug\lt8900.o
+_Beep2KOff                00008766   defined in Debug\beep.o section .text
+_Beep2KOn                 00008761   defined in Debug\beep.o section .text
+_BeepInISR                0000874c   defined in Debug\beep.o section .text
+                                     used in Debug\sys.o
+_CFG_GCR                  00007f60   defined in Debug\hekr_protocol.o
+_CLK_CANCCR               000050cb   defined in Debug\hekr_protocol.o
+_CLK_CCOR                 000050c9   defined in Debug\hekr_protocol.o
+_CLK_CKDIVR               000050c6   defined in Debug\hekr_protocol.o
+_CLK_CMSR                 000050c3   defined in Debug\hekr_protocol.o
+_CLK_CSSR                 000050c8   defined in Debug\hekr_protocol.o
+_CLK_ECKR                 000050c1   defined in Debug\hekr_protocol.o
+_CLK_HSITRIMR             000050cc   defined in Debug\hekr_protocol.o
+_CLK_ICKR                 000050c0   defined in Debug\hekr_protocol.o
+_CLK_PCKENR1              000050c7   defined in Debug\hekr_protocol.o
+_CLK_PCKENR2              000050ca   defined in Debug\hekr_protocol.o
+_CLK_SWCR                 000050c5   defined in Debug\hekr_protocol.o
+_CLK_SWIMCCR              000050cd   defined in Debug\hekr_protocol.o
+_CLK_SWR                  000050c4   defined in Debug\hekr_protocol.o
+_EXTI_CR1                 000050a0   defined in Debug\hekr_protocol.o
+_EXTI_CR2                 000050a1   defined in Debug\hekr_protocol.o
+_FLASH_CR1                0000505a   defined in Debug\hekr_protocol.o
+_FLASH_CR2                0000505b   defined in Debug\hekr_protocol.o
+_FLASH_DUKR               00005064   defined in Debug\hekr_protocol.o
+_FLASH_FPR                0000505d   defined in Debug\hekr_protocol.o
+_FLASH_IAPSR              0000505f   defined in Debug\hekr_protocol.o
+_FLASH_NCR2               0000505c   defined in Debug\hekr_protocol.o
+_FLASH_NFPR               0000505e   defined in Debug\hekr_protocol.o
+_FLASH_PUKR               00005062   defined in Debug\hekr_protocol.o
+_GPIO_INI                 0000869e   defined in Debug\sys.o section .text
+_GUART_commu              00008b09   defined in Debug\commu.o section .text
+                                     used in Debug\main.o
+_GUART_init               0000881c   defined in Debug\commu.o section .text
+                                     used in Debug\sys.o
+_Get_chipId               00008e2c   defined in Debug\lt8900.o section .text
+_I2C_CCRH                 0000521c   defined in Debug\hekr_protocol.o
+_I2C_CCRL                 0000521b   defined in Debug\hekr_protocol.o
+_I2C_CR1                  00005210   defined in Debug\hekr_protocol.o
+_I2C_CR2                  00005211   defined in Debug\hekr_protocol.o
+_I2C_DR                   00005216   defined in Debug\hekr_protocol.o
+_I2C_FREQR                00005212   defined in Debug\hekr_protocol.o
+_I2C_ITR                  0000521a   defined in Debug\hekr_protocol.o
+_I2C_OARH                 00005214   defined in Debug\hekr_protocol.o
+_I2C_OARL                 00005213   defined in Debug\hekr_protocol.o
+_I2C_PECR                 0000521e   defined in Debug\hekr_protocol.o
+_I2C_SR1                  00005217   defined in Debug\hekr_protocol.o
+_I2C_SR2                  00005218   defined in Debug\hekr_protocol.o
+_I2C_SR3                  00005219   defined in Debug\hekr_protocol.o
+_I2C_TRISER               0000521d   defined in Debug\hekr_protocol.o
+_ITC_SPR1                 00007f70   defined in Debug\hekr_protocol.o
+_ITC_SPR2                 00007f71   defined in Debug\hekr_protocol.o
+_ITC_SPR3                 00007f72   defined in Debug\hekr_protocol.o
+_ITC_SPR4                 00007f73   defined in Debug\hekr_protocol.o
+_ITC_SPR5                 00007f74   defined in Debug\hekr_protocol.o
+_ITC_SPR6                 00007f75   defined in Debug\hekr_protocol.o
+_ITC_SPR7                 00007f76   defined in Debug\hekr_protocol.o
+_IWDG_KR                  000050e0   defined in Debug\hekr_protocol.o
+_IWDG_PR                  000050e1   defined in Debug\hekr_protocol.o
+_IWDG_RLR                 000050e2   defined in Debug\hekr_protocol.o
+_InitBeep                 00008735   defined in Debug\beep.o section .text
+                                     used in Debug\sys.o
+_Init_LT8900              00008e6d   defined in Debug\lt8900.o section .text
+                                     used in Debug\sys.o
+_LT8900_DOWN_Deal         00009443   defined in Debug\lt8900.o section .text
+                                     used in Debug\main.o
+_LT8900_check_data        000091af   defined in Debug\lt8900.o section .text
+_LT8900_match_Deal        000093dd   defined in Debug\lt8900.o section .text
+_LT8900_pack_data         000092dc   defined in Debug\lt8900.o section .text
+_LT8900_read_data         00009354   defined in Debug\lt8900.o section .text
+_LT8900_send_data         00009383   defined in Debug\lt8900.o section .text
+_LT8900_unpack_data       00009200   defined in Debug\lt8900.o section .text
+_LT_ReadReg               000090fd   defined in Debug\lt8900.o section .text
+_LT_StartRx               00009142   defined in Debug\lt8900.o section .text
+_LT_TO_IDLE               00009137   defined in Debug\lt8900.o section .text
+_LT_WriteReg              00008dfd   defined in Debug\lt8900.o section .text
+_LT_comm_status_pack      00009170   defined in Debug\lt8900.o section .text
+_PA_CR1                   00005003   defined in Debug\hekr_protocol.o
+_PA_CR2                   00005004   defined in Debug\hekr_protocol.o
+_PA_DDR                   00005002   defined in Debug\hekr_protocol.o
+_PA_IDR                   00005001   defined in Debug\hekr_protocol.o
+_PA_ODR                   00005000   defined in Debug\hekr_protocol.o
+_PB_CR1                   00005008   defined in Debug\hekr_protocol.o
+_PB_CR2                   00005009   defined in Debug\hekr_protocol.o
+_PB_DDR                   00005007   defined in Debug\hekr_protocol.o
+_PB_IDR                   00005006   defined in Debug\hekr_protocol.o
+_PB_ODR                   00005005   defined in Debug\hekr_protocol.o
+_PC_CR1                   0000500d   defined in Debug\hekr_protocol.o
+_PC_CR2                   0000500e   defined in Debug\hekr_protocol.o
+_PC_DDR                   0000500c   defined in Debug\hekr_protocol.o
+_PC_IDR                   0000500b   defined in Debug\hekr_protocol.o
+_PC_ODR                   0000500a   defined in Debug\hekr_protocol.o
+_PD_CR1                   00005012   defined in Debug\hekr_protocol.o
+_PD_CR2                   00005013   defined in Debug\hekr_protocol.o
+_PD_DDR                   00005011   defined in Debug\hekr_protocol.o
+_PD_IDR                   00005010   defined in Debug\hekr_protocol.o
+_PD_ODR                   0000500f   defined in Debug\hekr_protocol.o
+_PE_CR1                   00005017   defined in Debug\hekr_protocol.o
+_PE_CR2                   00005018   defined in Debug\hekr_protocol.o
+_PE_DDR                   00005016   defined in Debug\hekr_protocol.o
+_PE_IDR                   00005015   defined in Debug\hekr_protocol.o
+_PE_ODR                   00005014   defined in Debug\hekr_protocol.o
+_PF_CR1                   0000501c   defined in Debug\hekr_protocol.o
+_PF_CR2                   0000501d   defined in Debug\hekr_protocol.o
+_PF_DDR                   0000501b   defined in Debug\hekr_protocol.o
+_PF_IDR                   0000501a   defined in Debug\hekr_protocol.o
+_PF_ODR                   00005019   defined in Debug\hekr_protocol.o
+_PG_CR1                   00005021   defined in Debug\hekr_protocol.o
+_PG_CR2                   00005022   defined in Debug\hekr_protocol.o
+_PG_DDR                   00005020   defined in Debug\hekr_protocol.o
+_PG_IDR                   0000501f   defined in Debug\hekr_protocol.o
+_PG_ODR                   0000501e   defined in Debug\hekr_protocol.o
+_ProdKey                  00008080   defined in Debug\stm8_uart.o section .const
+_RST_SR                   000050b3   defined in Debug\hekr_protocol.o
+_RegH                     0000004b   defined in Debug\lt8900.o section .ubsct
+_RegL                     0000004a   defined in Debug\lt8900.o section .ubsct
+_SPI_CR1                  00005200   defined in Debug\hekr_protocol.o
+_SPI_CR2                  00005201   defined in Debug\hekr_protocol.o
+_SPI_CRCPR                00005205   defined in Debug\hekr_protocol.o
+_SPI_DR                   00005204   defined in Debug\hekr_protocol.o
+_SPI_ICR                  00005202   defined in Debug\hekr_protocol.o
+_SPI_RXCRCR               00005206   defined in Debug\hekr_protocol.o
+_SPI_ReadByte             000090ba   defined in Debug\lt8900.o section .text
+_SPI_SR                   00005203   defined in Debug\hekr_protocol.o
+_SPI_SendByte             00008da9   defined in Debug\lt8900.o section .text
+_SPI_TXCRCR               00005207   defined in Debug\hekr_protocol.o
+_SPI_WriteByte            00009072   defined in Debug\lt8900.o section .text
+_SYS_CLK_INI              00008691   defined in Debug\sys.o section .text
+_SYS_INI                  000086e0   defined in Debug\sys.o section .text
+                                     used in Debug\main.o
+_TIM1_ARR                 00005262   defined in Debug\hekr_protocol.o
+_TIM1_ARRH                00005262   defined in Debug\hekr_protocol.o
+_TIM1_ARRL                00005263   defined in Debug\hekr_protocol.o
+_TIM1_BKR                 0000526d   defined in Debug\hekr_protocol.o
+_TIM1_CCER1               0000525c   defined in Debug\hekr_protocol.o
+_TIM1_CCER2               0000525d   defined in Debug\hekr_protocol.o
+_TIM1_CCMR1               00005258   defined in Debug\hekr_protocol.o
+_TIM1_CCMR2               00005259   defined in Debug\hekr_protocol.o
+_TIM1_CCMR3               0000525a   defined in Debug\hekr_protocol.o
+_TIM1_CCMR4               0000525b   defined in Debug\hekr_protocol.o
+_TIM1_CCR1                00005265   defined in Debug\hekr_protocol.o
+_TIM1_CCR1H               00005265   defined in Debug\hekr_protocol.o
+_TIM1_CCR1L               00005266   defined in Debug\hekr_protocol.o
+_TIM1_CCR2                00005267   defined in Debug\hekr_protocol.o
+_TIM1_CCR2H               00005267   defined in Debug\hekr_protocol.o
+_TIM1_CCR2L               00005268   defined in Debug\hekr_protocol.o
+_TIM1_CCR3                00005269   defined in Debug\hekr_protocol.o
+_TIM1_CCR3H               00005269   defined in Debug\hekr_protocol.o
+_TIM1_CCR3L               0000526a   defined in Debug\hekr_protocol.o
+_TIM1_CCR4                0000526b   defined in Debug\hekr_protocol.o
+_TIM1_CCR4H               0000526b   defined in Debug\hekr_protocol.o
+_TIM1_CCR4L               0000526c   defined in Debug\hekr_protocol.o
+_TIM1_CNTR                0000525e   defined in Debug\hekr_protocol.o
+_TIM1_CNTRH               0000525e   defined in Debug\hekr_protocol.o
+_TIM1_CNTRL               0000525f   defined in Debug\hekr_protocol.o
+_TIM1_CR1                 00005250   defined in Debug\hekr_protocol.o
+_TIM1_CR2                 00005251   defined in Debug\hekr_protocol.o
+_TIM1_DTR                 0000526e   defined in Debug\hekr_protocol.o
+_TIM1_EGR                 00005257   defined in Debug\hekr_protocol.o
+_TIM1_ETR                 00005253   defined in Debug\hekr_protocol.o
+_TIM1_IER                 00005254   defined in Debug\hekr_protocol.o
+_TIM1_OISR                0000526f   defined in Debug\hekr_protocol.o
+_TIM1_PSCR                00005260   defined in Debug\hekr_protocol.o
+_TIM1_PSCRH               00005260   defined in Debug\hekr_protocol.o
+_TIM1_PSCRL               00005261   defined in Debug\hekr_protocol.o
+_TIM1_RCR                 00005264   defined in Debug\hekr_protocol.o
+_TIM1_SMCR                00005252   defined in Debug\hekr_protocol.o
+_TIM1_SR1                 00005255   defined in Debug\hekr_protocol.o
+_TIM1_SR2                 00005256   defined in Debug\hekr_protocol.o
+_TIM2_ARR                 0000530d   defined in Debug\hekr_protocol.o
+_TIM2_ARRH                0000530d   defined in Debug\hekr_protocol.o
+_TIM2_ARRL                0000530e   defined in Debug\hekr_protocol.o
+_TIM2_CCER1               00005308   defined in Debug\hekr_protocol.o
+_TIM2_CCER2               00005309   defined in Debug\hekr_protocol.o
+_TIM2_CCMR1               00005305   defined in Debug\hekr_protocol.o
+_TIM2_CCMR2               00005306   defined in Debug\hekr_protocol.o
+_TIM2_CCMR3               00005307   defined in Debug\hekr_protocol.o
+_TIM2_CCR1                0000530f   defined in Debug\hekr_protocol.o
+_TIM2_CCR1H               0000530f   defined in Debug\hekr_protocol.o
+_TIM2_CCR1L               00005310   defined in Debug\hekr_protocol.o
+_TIM2_CCR2                00005311   defined in Debug\hekr_protocol.o
+_TIM2_CCR2H               00005311   defined in Debug\hekr_protocol.o
+_TIM2_CCR2L               00005312   defined in Debug\hekr_protocol.o
+_TIM2_CCR3                00005313   defined in Debug\hekr_protocol.o
+_TIM2_CCR3H               00005313   defined in Debug\hekr_protocol.o
+_TIM2_CCR3L               00005314   defined in Debug\hekr_protocol.o
+_TIM2_CNTR                0000530a   defined in Debug\hekr_protocol.o
+_TIM2_CNTRH               0000530a   defined in Debug\hekr_protocol.o
+_TIM2_CNTRL               0000530b   defined in Debug\hekr_protocol.o
+_TIM2_CR1                 00005300   defined in Debug\hekr_protocol.o
+_TIM2_EGR                 00005304   defined in Debug\hekr_protocol.o
+_TIM2_IER                 00005301   defined in Debug\hekr_protocol.o
+_TIM2_PSCR                0000530c   defined in Debug\hekr_protocol.o
+_TIM2_SR1                 00005302   defined in Debug\hekr_protocol.o
+_TIM2_SR2                 00005303   defined in Debug\hekr_protocol.o
+_TIM3_ARR                 0000532b   defined in Debug\hekr_protocol.o
+_TIM3_ARRH                0000532b   defined in Debug\hekr_protocol.o
+_TIM3_ARRL                0000532c   defined in Debug\hekr_protocol.o
+_TIM3_CCER1               00005327   defined in Debug\hekr_protocol.o
+_TIM3_CCMR1               00005325   defined in Debug\hekr_protocol.o
+_TIM3_CCMR2               00005326   defined in Debug\hekr_protocol.o
+_TIM3_CCR1                0000532d   defined in Debug\hekr_protocol.o
+_TIM3_CCR1H               0000532d   defined in Debug\hekr_protocol.o
+_TIM3_CCR1L               0000532e   defined in Debug\hekr_protocol.o
+_TIM3_CCR2                0000532f   defined in Debug\hekr_protocol.o
+_TIM3_CCR2H               0000532f   defined in Debug\hekr_protocol.o
+_TIM3_CCR2L               00005330   defined in Debug\hekr_protocol.o
+_TIM3_CNTR                00005328   defined in Debug\hekr_protocol.o
+_TIM3_CNTRH               00005328   defined in Debug\hekr_protocol.o
+_TIM3_CNTRL               00005329   defined in Debug\hekr_protocol.o
+_TIM3_CR1                 00005320   defined in Debug\hekr_protocol.o
+_TIM3_EGR                 00005324   defined in Debug\hekr_protocol.o
+_TIM3_IER                 00005321   defined in Debug\hekr_protocol.o
+_TIM3_PSCR                0000532a   defined in Debug\hekr_protocol.o
+_TIM3_SR1                 00005322   defined in Debug\hekr_protocol.o
+_TIM3_SR2                 00005323   defined in Debug\hekr_protocol.o
+_TIM4_ARR                 00005346   defined in Debug\hekr_protocol.o
+_TIM4_CNTR                00005344   defined in Debug\hekr_protocol.o
+_TIM4_CR1                 00005340   defined in Debug\hekr_protocol.o
+_TIM4_EGR                 00005343   defined in Debug\hekr_protocol.o
+_TIM4_IER                 00005341   defined in Debug\hekr_protocol.o
+_TIM4_PSCR                00005345   defined in Debug\hekr_protocol.o
+_TIM4_SR                  00005342   defined in Debug\hekr_protocol.o
+_TestBeep                 0000873e   defined in Debug\beep.o section .text
+_UART2_BRR1               00005242   defined in Debug\hekr_protocol.o
+_UART2_BRR2               00005243   defined in Debug\hekr_protocol.o
+_UART2_CR1                00005244   defined in Debug\hekr_protocol.o
+_UART2_CR2                00005245   defined in Debug\hekr_protocol.o
+_UART2_CR3                00005246   defined in Debug\hekr_protocol.o
+_UART2_CR4                00005247   defined in Debug\hekr_protocol.o
+_UART2_CR6                00005249   defined in Debug\hekr_protocol.o
+_UART2_DR                 00005241   defined in Debug\hekr_protocol.o
+_UART2_GTR                0000524a   defined in Debug\hekr_protocol.o
+_UART2_Init               000080ec   defined in Debug\stm8_uart.o section .text
+                                     used in Debug\sys.o
+_UART2_PSCR               0000524b   defined in Debug\hekr_protocol.o
+_UART2_SR                 00005240   defined in Debug\hekr_protocol.o
+_WIFI_COMMU               00008155   defined in Debug\stm8_uart.o section .text
+                                     used in Debug\main.o
+_WWDG_CR                  000050d1   defined in Debug\hekr_protocol.o
+_WWDG_WR                  000050d2   defined in Debug\hekr_protocol.o
+___TIM4_INI               000086cf   defined in Debug\sys.o section .text
+___WAIT_SYSTEM_STABLE     0000867e   defined in Debug\sys.o section .text
+__endmem                  000005ff   defined in command file
+                                     *** not used ***
+__endzp                   00000056   defined in command file section .ubsct
+                                     used in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8
+__idesc__                 00008090   defined in linker section .init
+                                     used in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8
+__memory                  000001d6   defined in command file section .bss
+                                     used in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8
+__stack                   000007ff   defined in command file
+                                     used in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8
+__startmem                000001d6   defined in command file section .bss
+                                     *** not used ***
+__stext                   000080a1   defined in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8 section .text
+                                     used in Debug\stm8_interrupt_vector.o
+__vectab                  00008000   defined in Debug\stm8_interrupt_vector.o section .const
+_beep_number              0000016f   defined in Debug\beep.o section .bss
+_beep_off_cnt             00000174   defined in Debug\beep.o section .bss
+_beep_off_cnt_setting     00000170   defined in Debug\beep.o section .bss
+_beep_on_cnt              00000176   defined in Debug\beep.o section .bss
+_beep_on_cnt_setting      00000172   defined in Debug\beep.o section .bss
+_beep_request             0000016e   defined in Debug\beep.o section .bss
+_beepmode                 00000178   defined in Debug\beep.o section .bss
+_buzzcon                  00008773   defined in Debug\beep.o section .text
+_dataStatus               00000002   defined in Debug\lt8900.o section .bsct, initialized
+_delay2_5US_1             00008d99   defined in Debug\lt8900.o section .text
+_delay_init               00008615   defined in Debug\delay.o section .text
+                                     used in Debug\sys.o
+_delay_ms                 0000864b   defined in Debug\delay.o section .text
+_delay_us                 0000863e   defined in Debug\delay.o section .text
+_eeprom_addr              000001d2   defined in Debug\eeprom.o section .bss
+_eeprom_buffer            000001cd   defined in Debug\eeprom.o section .bss
+_eeprom_pt                000001d4   defined in Debug\eeprom.o section .bss
+_eeprom_rdchar            00008d07   defined in Debug\eeprom.o section .text
+                                     used in Debug\lt8900.o
+_eeprom_rdpart            00008d14   defined in Debug\eeprom.o section .text
+_eeprom_read              00008d6d   defined in Debug\eeprom.o section .text
+_eeprom_step              000001d5   defined in Debug\eeprom.o section .bss
+_eeprom_wrchar            00008cde   defined in Debug\eeprom.o section .text
+                                     used in Debug\lt8900.o
+_eeprom_write             00008d6e   defined in Debug\eeprom.o section .text
+_exit                     000080ea   defined in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8 section .text
+_fac_us                   00000000   defined in Debug\delay.o section .bsct, initialized
+_flagBeep                 00000100   defined in Debug\beep.o section .data, initialized
+_indexTestBeep            00000001   defined in Debug\beep.o section .bsct, initialized
+_mDEV                     00000157   defined in Debug\sys.o section .bss
+                                     used in Debug\stm8_uart.o Debug\commu.o
+                                             Debug\lt8900.o
+_mGUART                   00000179   defined in Debug\commu.o section .bss
+_mLT8900                  0000001d   defined in Debug\lt8900.o section .ubsct
+_mTIME                    00000003   defined in Debug\sys.o section .ubsct
+                                     used in Debug\main.o Debug\commu.o
+_mUART                    00000101   defined in Debug\stm8_uart.o section .bss
+_mUSER                    0000000c   defined in Debug\lt8900.o section .ubsct
+_mWIFI                    0000014f   defined in Debug\sys.o section .bss
+                                     used in Debug\stm8_uart.o
+_main                     000085fc   defined in Debug\main.o section .text
+                                     used in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8
+_mdelay                   00008d6f   defined in Debug\lt8900.o section .text
+_mdelay_1                 0000916c   defined in Debug\lt8900.o section .text
+_timer_proc               00008728   defined in Debug\sys.o section .text
+                                     used in Debug\main.o
+c_imul                    000094a0   defined in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)imul.o section .text
+                                     used in Debug\delay.o Debug\lt8900.o
+c_lreg                    0000004c   defined in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)lreg.o section .ubsct
+                                     used in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)ltor.o
+c_ltor                    000094c1   defined in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)ltor.o section .text
+                                     used in Debug\commu.o
+c_sdivx                   000094d9   defined in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)sdivx.o section .text
+                                     used in Debug\delay.o
+c_smodx                   000094d3   defined in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)sdivx.o section .text
+                                     *** not used ***
+c_x                       00000050   defined in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)xreg.o section .ubsct
+                                     used in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8
+                                             Debug\sys.o Debug\commu.o
+                                             Debug\lt8900.o
+                                             (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)imul.o
+                                             (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)sdivx.o
+c_y                       00000053   defined in (C:\Program Files\STMicroelectronics\CXSTM8\Lib\libm0.sm8)yreg.o section .ubsct
+                                     used in C:\Program Files\STMicroelectronics\CXSTM8\Lib\crtsi0.sm8
+                                             Debug\sys.o Debug\commu.o
+f_EXTI_PORTB_IRQHandler   000088bd   defined in Debug\commu.o section .text
+                                     used in Debug\stm8_interrupt_vector.o
+f_NonHandledInterrupt     000094fe   defined in Debug\stm8_interrupt_vector.o section .text
+f_TIM2_isr                000088da   defined in Debug\commu.o section .text
+                                     used in Debug\stm8_interrupt_vector.o
+f_TIM4_isr                000086fc   defined in Debug\sys.o section .text
+                                     used in Debug\stm8_interrupt_vector.o
+f_UART2_Recv_IRQHandler   00008578   defined in Debug\stm8_uart.o section .text
+                                     used in Debug\stm8_interrupt_vector.o
+f_UART2_Send_IRQHandler   00008552   defined in Debug\stm8_uart.o section .text
+                                     used in Debug\stm8_interrupt_vector.o
