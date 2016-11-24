@@ -14,7 +14,7 @@
 main()
 {
 	SYS_INI();
-	
+	Beep(BEEP_KEY);
 	while(1)
 	{
 		timer_proc();
